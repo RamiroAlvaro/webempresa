@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webempresa.core',
     'webempresa.services.apps.ServicesConfig',
+    'webempresa.blog',
 ]
 
 MIDDLEWARE = [
