@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('webempresa.core.urls')),
     path('services/', include('webempresa.services.urls')),
     path('blog/', include('webempresa.blog.urls')),
+    path('page/', include('webempresa.pages.urls')),
     path('admin/', admin.site.urls),
 ]
 
