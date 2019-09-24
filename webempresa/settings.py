@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'webempresa.core',
     'webempresa.services.apps.ServicesConfig',
     'webempresa.blog',
+    'webempresa.social.apps.SocialConfig',
+    'webempresa.pages.apps.PagesConfig',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'webempresa.social.processors.ctx_dic',
             ],
         },
     },
