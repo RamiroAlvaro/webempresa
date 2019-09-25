@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'webempresa.blog',
     'webempresa.social.apps.SocialConfig',
     'webempresa.pages.apps.PagesConfig',
+    'webempresa.contact',
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,9 @@ CKEDITOR_CONFIGS = {
         ]
     }
 }
+
+# Email configuration
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
